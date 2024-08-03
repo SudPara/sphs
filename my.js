@@ -13,7 +13,7 @@ if (queryParameters["param2"]) {
   console.log("No Param2 parameter found.");
 }
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbw6P29NNf1HBs6AEA160g__SOKjgm4jb4EDiesmeQxXtWYZhu92jt6P6lzGm-N0lsuO6Q/exec'; // Please set your Web Apps URL.
+const scriptURL = 'https://script.google.com/macros/s/AKfycbySVg0sIvB96_AZXHpt4hQuh36RhFCjcQbA_hPP3tsso7v5Qgu1RHpKEMBFXSmo0fyCDg/exec'; // Please set your Web Apps URL.
 
 const data = new FormData();
 Object.entries(queryParameters).forEach(e => data.append(...e));
