@@ -1,1 +1,22 @@
+<form name="submit-to-google-sheet">
+    <input type="text" id="inputBoxParam1" name="Param1" placeholder="Param1"/>
+    <br><br>
+    <input type="text" id="inputBoxParam2" name="Param2" placeholder="Param2" />
+    <br><br>
+</form>
+
+<script>
+const queryParameters = Object.fromEntries(new URLSearchParams(window.location.search));
+
+if (queryParameters["param1"].includes("@")) {
+  document.getElementById("inputBoxParam1").value = queryParameters["param1"];
+} else {
+  console.log("No Param1 parameter found.");
+}
+
+if (queryParameters["param2"]) {
+  document.getElementById("inputBoxParam2").value = queryParameters["param2"];
+} else {
+  console.log("No Param2 parameter found.");
+}
 
