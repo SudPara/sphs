@@ -1,21 +1,31 @@
-<form name="submit-to-google-sheet">
-    <input type="text" id="inputBoxParam1" name="Param1" placeholder="Param1" />
-    <br>
-    <br>
-    <input type="text" id="inputBoxParam2" name="Param2" placeholder="Param2" />
-    <br>
-    <br>
-</form>
-
 <!DOCTYPE html>
 <html>
+   <head>
+      <style type="text/css">
+         html {
+         overflow: auto;
+         }
+         html,
+         body,
+         div,
+         iframe {
+         margin: 0px;
+         padding: 0px;
+         height: 100%;
+         border: none;
+         }
+         iframe {
+         display: block;
+         width: 100%;
+         border: none;
+         overflow-y: auto;
+         overflow-x: hidden;
+         }
+      </style>
+   </head>
+   <body>
+      <h2 style="font-family:verdana;color:grey;font-size:200%;">Sudarshan Paradise Dashboard</h2>
 
-<body>
-    <h2>The target Attribute</h2>
-    <!-- 
-    <a href="https://script.google.com/macros/s/AKfycbxbQ6ldDFBnoJbtFAdlSTlksF9b-B1JtOwu5rIXR1DfMgDgsuS4bTc9fIMFA4z92tEG7g/exec" target="_self">Visit W3Schools!</a>
-    -->
-    <iframe src="https://script.google.com/macros/s/AKfycbxbQ6ldDFBnoJbtFAdlSTlksF9b-B1JtOwu5rIXR1DfMgDgsuS4bTc9fIMFA4z92tEG7g/exec&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
-</body>
-
+      <iframe src="https://script.google.com/macros/s/AKfycbxbQ6ldDFBnoJbtFAdlSTlksF9b-B1JtOwu5rIXR1DfMgDgsuS4bTc9fIMFA4z92tEG7g/exec"  frameborder="0" marginheight="0" marginwidth="0" width="100%" height="100%" scrolling="auto"></iframe>
+   </body>
 </html>
